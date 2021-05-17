@@ -35,13 +35,14 @@ function draw() {
   dustbinObj.display();
   paper.display();
 
-	if(keyCode===UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:4,y:-10});
-	}
-	if(keyCode===DOWN_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:4,y:10});
-	}
+
 
 
 }
+function keyPressed(){
 
+	if(keyCode===UP_ARROW){
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:4,y:-10});
+	}
+
+}
